@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3: Thiết kế trang web bài báo chuẩn Semantic</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        article {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #1a252f;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+        .meta-data {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+            margin-bottom: 25px;
+            display: flex;
+            gap: 15px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ecf0f1;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            border-left: 4px solid #3498db;
+            padding-left: 12px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        li strong {
+            color: #2980b9; /* Đổi màu chữ in đậm cho nổi bật */
+        }
+        footer {
+            margin-top: 50px;
+            border-top: 1px solid #ecf0f1;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #95a5a6;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <article>  
+        <header>
+            <h1>Tầm quan trọng của HTML trong phát triển Web</h1>
+            <div class="meta-data">
+                <span>Ngày: <time datetime="2024-12-25">25/12/2024</time></span>
+                <span>•</span>
+                <span>Tác giả: <strong>Nguyễn Văn A</strong></span>
+            </div>
+        </header>
+        <hr>
+        <section>
+            <h3>Giới thiệu</h3>
+            <p>HTML (HyperText Markup Language) là ngôn ngữ cốt lõi được sử dụng để xây dựng và thiết kế cấu trúc của các trang web. HTML định nghĩa các phần tử cơ bản như tiêu đề, đoạn văn, hình ảnh, liên kết, và nhiều hơn nữa.</p>
+        </section>
+        <section>
+            <h3>Tại sao HTML quan trọng?</h3>
+            <p>HTML đóng vai trò là bộ khung của mọi trang web. Nó không chỉ giúp trình bày nội dung mà còn làm việc song hành với CSS và JavaScript để tạo ra trải nghiệm người dùng phong phú.</p>
+            <ul>
+                <li><strong>Định dạng nội dung web:</strong> Giúp trình duyệt hiểu được đâu là tiêu đề, đâu là đoạn văn hay hình ảnh.</li>
+                <li><strong>Hỗ trợ các công nghệ hiện đại:</strong> Tối ưu cho SEO (tìm kiếm) và hỗ trợ tốt Responsive Design (hiển thị tốt trên điện thoại).</li>
+                <li><strong>Kết hợp với CSS:</strong> Dễ dàng kết hợp với các thuộc tính CSS để cải thiện và làm đẹp giao diện.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Kết luận</h3>
+            <p>HTML là bước đầu tiên trong hành trình học phát triển web. Hiểu rõ và sử dụng thành thạo HTML sẽ giúp bạn xây dựng nền tảng vững chắc để học các công nghệ web khác.</p>
+        </section>
+        <footer>
+            <p>&copy; 2024 Nguyễn Văn A - Tất cả các quyền được bảo lưu.</p>
+        </footer>
+    </article>
+</body>
+</html>

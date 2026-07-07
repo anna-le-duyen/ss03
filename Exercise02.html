@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập: Tạo một trang web ảnh cá nhân</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .image-grid {
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Danh sách ảnh của bạn</h1>
+    <div class="image-grid">
+         <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2024/01/avartar-anime-11.jpg">
+         <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2024/01/avartar-anime-15.jpg">
+         <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2024/01/avartar-anime-47.jpg">
+         <img src="https://cellphones.com.vn/sforum/wp-content/uploads/2024/01/avartar-anime-52.jpg">
+    </div>
+</body>
+</html>
