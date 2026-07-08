@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Tạo Form Thông Tin Sở Thích</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            padding: 40px;
+        }
+        .form-wrapper {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 580px;
+            border: 15px solid #7a96dd;
+        }
+        .form-header {
+            background-color: #ff3d00;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px;
+            letter-spacing: 1px;
+        }
+        .hobby-form {
+            padding: 25px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            width: 100px;
+            font-weight: bold;
+            color: #123fd4;
+            font-size: 15px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            flex: 1;
+            padding: 6px 10px;
+            border: 1px solid #767676;
+            font-size: 14px;
+            outline: none;
+            color: #000000; 
+        }
+        .form-group-checkbox {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        .checkbox-title {
+            width: 100px;
+            font-weight: bold;
+            color: #0735cb;
+            font-size: 15px;
+            padding-top: 2px;
+        }
+        .checkbox-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px 10px;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ff5722; 
+            cursor: pointer;
+        }
+        .checkbox-item input {
+            cursor: pointer;
+            accent-color: #ff5722; 
+        }
+        .form-buttons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+            padding-left: 100px; 
+        }
+        .btn {
+            padding: 4px 18px;
+            font-size: 14px;
+            border: 1px solid #767676;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            color: #000000;
+        }
+        .btn:hover {
+            background-color: #e5e5e5;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="form-header">
+            SỞ THÍCH CỦA BẠN
+        </div>
+        <form action="#" method="POST" class="hobby-form">
+            <div class="form-group">
+                <label for="fullname">Họ và tên</label>
+                <input type="text" id="fullname" name="fullname">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group-checkbox">
+                <div class="checkbox-title">Sở thích</div>
+                <div class="checkbox-grid">
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="hobbies" value="sports"> Thể thao
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="hobbies" value="music"> Âm nhạc
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="hobbies" value="reading"> Đọc sách
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="hobbies" value="web"> Lướt web
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="hobbies" value="gaming"> Chơi game
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="hobbies" value="cinema"> Điện ảnh
+                    </label>  
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="hobbies" value="travel"> Du lịch
+                    </label>
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="btn">Gửi thông tin</button>
+                <button type="reset" class="btn">Nhập lại</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
